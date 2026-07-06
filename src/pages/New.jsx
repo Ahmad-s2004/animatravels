@@ -10,10 +10,10 @@ const New = () => {
   const [activeTab, setActiveTab] = useState('all');
 
   // Optimized WebP paths (Public folder setup)
-  const imgSwat = '/swat.jpg';
-  const imgNeelum = '/nelum.jpg';
-  const imgHunza = '/hunza.jpg';
-  const imgSkardu = '/skardu.jpg';
+  const imgSwat = '/assets/swat.jfif';
+  const imgNeelum = '/assets/nelum.jpg';
+  const imgHunza = '/assets/hunza.jpg';
+  const imgSkardu = '/assets/skardu.jpg';
 
   const categories = [
     { id: 'all', name: 'All Expeditions' },
