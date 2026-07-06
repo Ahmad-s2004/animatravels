@@ -63,11 +63,9 @@ const Light = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-500 selection:text-white overflow-x-hidden">
       
-      {/* 0. LIVELY LIGHT NAVIGATION BAR */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-sky-100 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
               <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-900 flex items-center gap-1.5">
                 <Compass className="text-sky-500" size={24} />
@@ -75,7 +73,6 @@ const Light = () => {
               </span>
             </div>
 
-            {/* Nav Links */}
             <div className="hidden md:flex items-center gap-8">
               <a href="#" className="text-sm font-bold text-sky-600 border-b-2 border-sky-500 pb-1">Home</a>
               <div className="relative group cursor-pointer">
@@ -92,7 +89,6 @@ const Light = () => {
               <a href="#" className="text-sm font-semibold text-slate-600 hover:text-sky-600 transition-colors">About Us</a>
             </div>
 
-            {/* CTA Group */}
             <div className="hidden md:flex items-center gap-4">
               <a href="tel:+9230000000" className="text-slate-600 hover:text-sky-600 p-2 transition-colors flex items-center gap-2 text-sm font-bold">
                 <Phone size={16} className="text-sky-500" /> +92 300 000000
@@ -102,7 +98,6 @@ const Light = () => {
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center">
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -114,7 +109,6 @@ const Light = () => {
           </div>
         </div>
 
-        {/* Mobile Menu Drawer */}
         <div className={`md:hidden bg-white border-b border-sky-50 transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen py-4' : 'max-h-0'}`}>
           <div className="px-4 space-y-2">
             <a href="#" className="block text-sm font-bold text-sky-600 py-2.5 border-b border-slate-100">Home</a>
@@ -125,7 +119,6 @@ const Light = () => {
         </div>
       </nav>
 
-      {/* 1. FRESH VIBRANT HERO SECTION */}
       <section className="relative min-h-[100vh] md:min-h-[92vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-sky-50 via-sky-50/20 to-white pt-20">
         <div className="absolute inset-0 z-0">
           <img 
@@ -153,7 +146,6 @@ const Light = () => {
             Skip the stress of logistics. Experience premium hospitality, curated photography tracks, and handpicked local stays across Pakistan.
           </p>
 
-          {/* Lively Search bar */}
           <div className="bg-white p-4 rounded-3xl shadow-xl shadow-sky-900/5 max-w-5xl mx-auto border border-sky-100/80 grid grid-cols-1 md:grid-cols-4 gap-3 text-left">
             <div className="p-3 hover:bg-sky-50/50 rounded-2xl transition-colors duration-200 cursor-pointer flex flex-col justify-center">
               <span className="text-[10px] font-bold text-sky-600 uppercase tracking-wider flex items-center gap-1"><MapPin size={12}/> Destination</span>
@@ -176,7 +168,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 2. VALUE PROPOSITION (BRIGHT CARDS) */}
       <section className="py-16 sm:py-24 px-4 max-w-7xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-amber-600 font-extrabold text-[11px] uppercase tracking-widest bg-amber-500/10 px-3 py-1 rounded-full">Premium Execution</span>
@@ -201,7 +192,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 3. POPULAR DESTINATIONS */}
       <section className="py-20 bg-gradient-to-b from-white via-sky-50/40 to-white border-y border-sky-100 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-12">
@@ -235,7 +225,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 4. CUSTOM CTA */}
       <section className="py-12 px-4 max-w-7xl mx-auto">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-400 via-sky-500 to-teal-500 px-6 py-12 shadow-xl sm:px-16 sm:py-16 flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="absolute top-0 right-0 w-80 h-80 bg-amber-300/30 rounded-full blur-3xl pointer-events-none" />
@@ -249,7 +238,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 5. ACTIVE packages */}
       <section className="py-16 sm:py-24 px-4 max-w-7xl mx-auto">
         <div className="text-center max-w-xl mx-auto mb-16">
           <span className="text-sky-600 font-bold text-[11px] uppercase tracking-widest bg-sky-50 border border-sky-200/50 px-3 py-1 rounded-full">Top Departures</span>
@@ -282,7 +270,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 6. NEW LIVELY CUSTOMER REVIEWS SECTION (Replaced Photo Gallery) */}
       <section className="py-20 bg-gradient-to-b from-white to-sky-50/50 border-t border-sky-100 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-xl mx-auto mb-16">
@@ -296,24 +283,20 @@ const Light = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {customerReviews.map((rev, i) => (
               <div key={i} className="bg-white p-8 rounded-3xl border border-sky-100 shadow-sm shadow-sky-900/5 hover:shadow-xl hover:border-sky-200 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
-                {/* Decorative background accent */}
                 <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-sky-400 to-teal-400" />
                 
                 <div>
-                  {/* Stars Row */}
                   <div className="flex gap-1 mb-4">
                     {[...Array(rev.rating)].map((_, idx) => (
                       <Star key={idx} size={16} className="fill-amber-500 text-amber-500" />
                     ))}
                   </div>
 
-                  {/* Review Text */}
                   <p className="text-slate-600 text-sm leading-relaxed font-medium italic">
                     "{rev.review}"
                   </p>
                 </div>
 
-                {/* User Info Footer */}
                 <div className="mt-8 pt-4 border-t border-slate-100 flex items-center justify-between">
                   <div>
                     <h4 className="text-base font-bold text-slate-900">{rev.name}</h4>
@@ -329,7 +312,6 @@ const Light = () => {
         </div>
       </section>
 
-      {/* 7. FOOTER */}
       <footer className="bg-white text-slate-500 pt-16 pb-8 border-t border-sky-100 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div>
