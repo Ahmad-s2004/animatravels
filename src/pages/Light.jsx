@@ -5,7 +5,7 @@ import {
   Send, Menu, X, Phone, Heart, Star, Sparkles, MessageSquare
 } from 'lucide-react';
 
-const Home = () => {
+const Light = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Public folder direct absolute paths
@@ -367,4 +367,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Light;
