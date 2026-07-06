@@ -9,10 +9,10 @@ const Home = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Directly defining asset paths without importing at the top
-  const imgSwat = '../public/assets/swat.jfif';
-  const imgNeelum = '../public/assets/nelum.jpg'; // Filesystem name 'nelum.jpg'
-  const imgHunza = '../public/assets/hunza.jpg';
-  const imgSkardu = '../public/assets/skardu.jpg';
+  const imgSwat = '/assets/swat.jfif';
+  const imgNeelum = '/assets/nelum.jpg'; // Filesystem name 'nelum.jpg'
+  const imgHunza = '/assets/hunza.jpg';
+  const imgSkardu = '/assets/skardu.jpg';
 
   // Destinations Array using direct paths
   const destinations = [
